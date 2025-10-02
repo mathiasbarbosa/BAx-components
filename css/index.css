@@ -1,0 +1,209 @@
+:root {
+  /* colores */
+  --bax-primary: #64d8c8;
+  --bax-secondary: #101e37;
+  --bax-tertiary: #0a64e6;
+  --bax-danger: #cc3333;
+  --bax-primary-state: #25dbc2;
+  --bax-secondary-state: #080f1c;
+  --bax-danger-state: #a32929;
+  /* --bax-tertiary-state: ; */
+  --white: #ffffff;
+  --green: #218274;
+  --neutral: #e6ebf0;
+  --text-secondary: #38485c;
+  --success: #26874a;
+  /* colores */
+
+  /* bordes */
+  --bax-border-radius-default: 3.375rem;
+
+  /* bordes */
+
+  /* tipografías */
+
+  /* tipografías */
+
+  /* tamaños */
+  --bax-btn-size-large: 32.813rem;
+  /* tamaños */
+
+  /* font sizes */
+  /* font sizes */
+
+  /* padding */
+  --bax-padding-btn-default: 0.75rem 1.25rem;
+  /* padding */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bax-bg-primary {
+  background-color: var(--bax-primary);
+}
+
+/** BOTONES */
+.bax-btn {
+  border-radius: var(--bax-border-radius-default);
+  padding: var(--bax-padding-btn-default);
+  color: var(--bax-secondary);
+  height: 3rem;
+  width: auto;
+  border: none;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+/* TODO DEFINIR ESTADOS FOCUS, ACTIVE, ETC */
+.bax-btn:focus {
+  outline: 0.125rem solid #218274 !important;
+  outline-offset: -0.125rem;
+  border: none;
+}
+
+.bax-btn-primary {
+  background-color: var(--bax-primary);
+}
+
+.bax-btn-primary:hover {
+  background-color: var(--bax-primary-state);
+}
+
+.bax-btn-large {
+  width: var(--bax-btn-size-large);
+}
+
+.bax-btn-secondary {
+  background-color: var(--bax-secondary);
+  color: var(--white);
+}
+
+.bax-btn-secondaryy:hover {
+  background-color: var(--bax-secondary-state);
+}
+
+.bax-btn-outline-secondary {
+  background-color: transparent;
+  border: solid 0.125rem var(--bax-secondary);
+}
+
+.bax-btn-outline-secondary:hover {
+  background-color: var(--bax-secondary-state);
+  color: var(--white);
+}
+
+.bax-btn-outline-secondary-no-radius {
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: solid 0.125rem var(--bax-secondary);
+}
+
+.bax-btn-danger {
+  background-color: var(--bax-danger);
+  color: var(--white);
+}
+
+.bax-btn-danger:hover {
+  background-color: var(--bax-danger-state);
+  color: var(--white);
+}
+
+.bax-btn-white {
+  background-color: var(--white);
+  color: var(--bax-tertiary);
+}
+
+/* .bax-btn-tertiary:hover {
+  background-color: var(--white);
+  color: var(--bax-tertiary);
+} */
+/** BOTONES */
+
+/** TARJETAS */
+.bax-card-activity-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--white);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--neutral);
+  border-left: 8px solid var(--bax-primary);
+  width: max-content; /* !TODO revisar ancho  */
+  width: 258px; /* !TODO revisar ancho  */
+  box-shadow: 0px 1px 3px 0px #00000033;
+}
+
+.bax-card-activity-horizontal-content h6,
+.bax-card-activity-horizontal-content p {
+  margin: 0;
+}
+
+.bax-card-activity-horizontal-content p {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.bax-card-activity-horizontal-content ~ i {
+  color: var(--neutral);
+}
+
+.bax-card-claim,
+.bax-card-shift {
+  border: 1px solid var(--neutral);
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bax-card-claim {
+  width: 406px; /* !TODO revisar ancho  */
+}
+.bax-card-claim h6,
+.bax-card-claim p,
+.bax-card-shift h6,
+.bax-card-shift p {
+  margin: 0;
+}
+
+.bax-card-claim > p,
+.bax-card-shift > p:first-child {
+  text-transform: uppercase;
+}
+
+.bax-card-claim h6,
+.bax-card-shift h6 {
+  font-weight: bold;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.bax-card-claim h6 i.bxs-check-circle {
+  color: var(--success);
+}
+
+.bax-card-claim-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bax-card-claim-progress p {
+  margin: 0;
+}
+
+.bax-card-shift {
+  width: 328px; /* !TODO revisar ancho  */
+}
+
+/** TARJETAS */

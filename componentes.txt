@@ -1,0 +1,41 @@
+ 
+BOTONES (4 variantes)
+primary - verde/celeste ✅
+secondary ✅
+blanco ✅
+outline ✅
+danger ✅
+con icono (Ingresar - header) ✅
+nuevos tamaños 
+
+DESPLEGABLE
+con icono (perfil - header) ✅
+ 
+TARJETAS (6 variantes)
+documentos 
+mi actividad ✅
+reclamos? ✅
+turnos ✅
+descubrir
+con botones (asistentes)
+
+MENÚ 
+BANNER PROXIMO TURNO
+
+COLAPSABLES (2 variantes)
+mi perfil
+mis documentos
+ 
+ETIQUETAS (6 variantes)
+- con funcionalidad 
+icono a la derecha +/-
+icono izquierda con color
+seleccionables (reclamos - personalización - notificaciones) 
+- con información (perfil) 
+personalización
+ 
+ACCESOS RAPIDOS (3 variantes+)
+clima
+subte
+eventos
+con color de fondo
