@@ -8,22 +8,21 @@ danger ✅
 con icono (Ingresar - header) ✅
 nuevos tamaños 
 
-DESPLEGABLE
-con icono (perfil - header) ✅
- 
 TARJETAS (6 variantes)
 documentos 
 mi actividad ✅
 reclamos? ✅
 turnos ✅
 descubrir
-con botones (asistentes)
+con botones (asistentes) ✅
+subte ✅
 
-MENÚ 
-BANNER PROXIMO TURNO
+
+MENÚ ✅
+aviso PROXIMO TURNO✅
 
 COLAPSABLES (2 variantes)
-mi perfil
+mi perfil ✅ > DESPLEGABLE con icono (perfil - header) ✅
 mis documentos
  
 ETIQUETAS (6 variantes)
@@ -35,7 +34,10 @@ seleccionables (reclamos - personalización - notificaciones)
 personalización
  
 ACCESOS RAPIDOS (3 variantes+)
-clima
-subte
-eventos
+clima ✅
+subte ✅
+eventos ✅
 con color de fondo
+
+Item notificaciones ✅
+Item notificaciones fehacientes ✅
