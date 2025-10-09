@@ -1,0 +1,80 @@
+:root {
+  --neutral-bg: #f3f6f9;
+}
+
+.bg-neutral {
+  background-color: var(--neutral-bg);
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.bax-title {
+  font-weight: bold;
+  font-size: 33px;
+  background: linear-gradient(90deg, #0086ad 0%, #00c5ff 100%);
+  -webkit-background-clip: text; /* Clip the background to the text shape */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make the text transparent to reveal the background */
+  color: transparent; /* Fallback for browsers that don't support -webkit-text-fill-color */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar.o-header {
+  border-bottom: none;
+}
+
+.bax-hero {
+  padding: 3rem 8.063rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bax-hero-banner {
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 249px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: bottom;
+  }
+}
+
+.bax-hero-widgets {
+  display: flex;
+  padding: 1rem;
+  gap: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bax-hero-chat {
+  border-radius: 1rem;
+  position: relative;
+  background-color: #fff;
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+  padding-top: 7.25rem;
+
+  .bax-hero-chat-container-img {
+    position: absolute;
+    top: -50%;
+  }
+
+  .bax-hero-chat-container-content p {
+    color: #38485c;
+  }
+
+  .bax-hero-chat-container-content > * {
+    margin: 0;
+  }
+}

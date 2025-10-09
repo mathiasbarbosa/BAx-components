@@ -607,3 +607,38 @@
 }
 
 /** BADGE */
+
+/** WIDGET */
+
+.bax-widget {
+  width: 180px;
+  border-radius: var(--bax-border-radius-sm);
+  background-color: var(--white);
+  border: 1px solid var(--neutral);
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  opacity: 0.8;
+}
+
+.bax-widget-container-icon {
+  font-size: 2.5rem;
+}
+
+.bax-widget-content > * {
+  margin: 0;
+}
+
+.bax-widget-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .bax-card-subway-content-letter {
+    width: 2.68rem;
+    height: 2.68rem;
+    font-size: 20px;
+  }
+}
+
+/** WIDGET */
