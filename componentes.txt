@@ -27,9 +27,9 @@ mis documentos
  
 ETIQUETAS (6 variantes)
 - con funcionalidad 
-icono a la derecha +/-
+icono a la derecha +/- ✅
 icono izquierda con color
-seleccionables (reclamos - personalización - notificaciones) 
+seleccionables (reclamos - personalización - notificaciones) ✅ 
 - con información (perfil) 
 personalización
  

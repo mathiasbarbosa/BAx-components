@@ -12,6 +12,7 @@
   --green: #218274;
   --neutral: #e6ebf0;
   --text-secondary: #38485c;
+  --text-dark: #002733;
   --success: #26874a;
   --cyan-50: #f3fcfb;
   --cyan-100: #e2f8f5;
@@ -548,3 +549,61 @@
   margin: 0;
 }
 /* * ACCESOS  */
+
+/** BADGE */
+
+.bax-badge {
+  width: auto;
+  max-width: max-content;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--bax-border-radius-sm);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.125rem;
+  background-color: var(--white);
+  border: 1px solid var(--neutral);
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.bax-badge-default:active,
+.bax-badge-default:focus,
+.bax-badge-default:hover {
+  background-color: #0027330d;
+  border-color: #002733;
+  color: #002733;
+  font-weight: 600;
+}
+
+.bax-badge-spinner {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  background-color: var(--bax-danger);
+}
+
+.bax-badge-large {
+  min-width: 253px;
+  max-width: 348px;
+  border-radius: 1.25rem;
+  border: 1px solid var(--neutral);
+  padding: 0.625rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.125rem;
+}
+
+.bax-badge-large:active,
+.bax-badge-large:focus,
+.bax-badge-large:hover {
+  background-color: var(--cyan-50);
+  border-color: var(--text-dark);
+}
+
+.bax-badge-cyan {
+  background-color: var(--cyan-50);
+}
+
+/** BADGE */
