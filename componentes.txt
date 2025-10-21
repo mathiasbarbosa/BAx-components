@@ -41,3 +41,22 @@ con color de fondo
 
 Item notificaciones ✅
 Item notificaciones fehacientes ✅
+
+
+---------------------------------------
+
+OTROS COMPONENTES
+
+banner download app ✅
+banner login app ✅
+alerta success ✅
+alerta download documentos ✅
+alerta delete ✅
+vista perfil 
+home perfil logueado
+galeria descubrir ❌
+
+
+// ! TODO 
+- estados componentes
+- responsive 
