@@ -135,7 +135,7 @@
           </div>
           <div class="navbar-login">
             <button type="button" class="bax-btn bax-btn-outline-secondary-no-radius"
-              style="display: flex; align-items: center; gap: .25rem;">Ingresar a
+              style="display: flex; align-items: center; gap: .25rem; text-wrap: nowrap;">Ingresar a
               <img src="./assets/Logo-BAx.svg" alt="Logo BAx" width="90" height="39">
             </button>
           </div>
@@ -147,7 +147,7 @@
 
   <main>
     <section class="bax-hero bg-neutral">
-      <div class="bax-hero-banner">
+      <div class="bax-hero-banner container">
         <div>
           <img src="./assets/bax-banner.jpg" alt="Banner BAx">
         </div>
@@ -183,7 +183,7 @@
 
 
 
-      <div class="bax-hero-chat">
+      <div class="bax-hero-chat container">
         <!-- other components -->
         <div class="bax-hero-chat-container-img">
           <img src="./assets/boti.png" alt="">
@@ -194,17 +194,64 @@
             <h1 class="bax-title">¡Hola! Acá Boti
               <img src="./assets/laChispa.svg" alt="">
             </h1>
-            <p>¿En qué puedo ayudarte?</p>
           </div>
 
-          <form>
-            <div class='search-container' style="position: relative;">
-              <input type="search" class="form-control input-search" id="search" placeholder="Buscar..." name="search"
-                aria-label="Campo de búsqueda" />
-              <img src="./assets/btnBoti.png" alt="btn boti" style="position: absolute; right: 3px; top: -3px;">
-              <button class="reset" type="reset" aria-label="Borrar"></button>
+          <div class="bax-hero-chat-container-messages">
+            <!-- mensajes del chat -->
+            <div class="bax-chat-container-message">
+              <p>¿En qué puedo ayudarte?</p>
             </div>
-          </form>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+            <div class="bax-chat-container-message">
+              <p>Hola, necesito ayuda con mi trámite.</p>
+            </div>
+
+          </div>
+
+          <div class="d-flex align-items-center gap-2">
+            <textarea class="form-control" style="border-radius: 1.5rem;  resize: none;" id="input-textarea"
+              name="campoBloqueTexto" placeholder="Texto de ejemplo"></textarea>
+            <img src="./assets/Boton.svg" alt="Send message">
+          </div>
+
         </div>
 
       </div>

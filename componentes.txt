@@ -54,7 +54,6 @@ alerta download documentos ✅
 alerta delete ✅
 vista perfil 
 home perfil logueado
-galeria descubrir ❌
 
 
 // ! TODO 

@@ -28,7 +28,8 @@
 }
 
 .bax-hero {
-  padding: 3rem 8.063rem;
+  /* padding: 3rem 8.063rem; */
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -39,6 +40,7 @@
   overflow: hidden;
   height: 249px;
   position: relative;
+  padding: 0;
 
   img {
     width: 100%;
@@ -64,10 +66,12 @@
   padding: 0 2rem;
   padding-bottom: 2rem;
   padding-top: 7.25rem;
+  max-height: 56.25rem;
 
   .bax-hero-chat-container-img {
     position: absolute;
-    top: -50%;
+    top: 0%;
+    transform: translateY(-50%);
   }
 
   .bax-hero-chat-container-content p {
@@ -76,5 +80,39 @@
 
   .bax-hero-chat-container-content > * {
     margin: 0;
+  }
+}
+
+.bax-hero-chat-container-messages {
+  padding: 1rem;
+  max-height: 28.125rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bax-chat-container-message {
+  display: flex;
+
+  > p {
+    background-color: var(--neutral-bg);
+    display: block;
+    width: max-content;
+    max-width: 60%;
+    padding: 0.5rem;
+    border-radius: 1rem 1rem 1rem 0;
+    margin: 0;
+  }
+}
+
+.bax-hero-chat-container-messages
+  > .bax-chat-container-message:nth-child(even) {
+  justify-content: flex-end;
+
+  > p {
+    background-color: #0086ad;
+    color: #fff;
+    border-radius: 1rem 1rem 0 1rem;
   }
 }
