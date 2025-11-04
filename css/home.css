@@ -133,3 +133,17 @@
 .bax-widget-subway-active {
   opacity: 0.8;
 }
+
+.bax-widget-icon {
+  display: flex;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.bax-widget-content {
+  > div {
+    display: flex;
+  }
+}
