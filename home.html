@@ -164,18 +164,62 @@
             </div>
           </div>
 
+          <div class="bax-container-widget-subway">
 
-          <div class="bax-widget">
-            <div class="bax-widget-container-icon">
-              <i class='bx bxs-train'></i>
-            </div>
-            <div class="bax-widget-content">
-              <div class="bax-card-subway-content-letter bax-bg-sky-500">
-                A
+            <div class="bax-widget bax-widget-subway bax-widget-subway-active" id="subway-normal">
+
+              <div class="bax-widget-container-icon" style="display: flex;">
+                <img src="./assets/subway-normal.svg" alt="" style="width: 40px; height: 40px;">
               </div>
-              <p>Interrumpida</p>
+
+
+              <div class="bax-widget-content">
+                <div class="" style="display: flex;">
+                  <div class="bax-card-subway-content-letter bax-bg-sky-500">
+                    A
+                  </div>
+                  <div class="bax-card-subway-content-letter bax-bg-danger-500" style="margin-left: -0.8rem;">
+                    B
+                  </div>
+                  <div class="bax-card-subway-content-letter bax-bg-success-500" style="margin-left: -0.8rem;">
+                    C
+                  </div>
+                </div>
+                <p style="text-wrap: nowrap;">Servicio normal</p>
+              </div>
+
             </div>
+
+            <div class="bax-widget bax-widget-subway " id="subway-affected">
+
+              <div class="bax-widget-container-icon" style="display: flex;">
+                <img src="./assets/subway-afectado.svg" alt="" style="width: 40px; height: 40px;">
+              </div>
+
+
+              <div class="bax-widget-content">
+                <div class="" style="display: flex;">
+                  <div class="bax-card-subway-content-letter" style="background-color: #622687">
+                    E
+                  </div>
+                  <div class="bax-card-subway-content-letter" style="margin-left: -0.8rem; background-color: #FFDB2E">
+                    H
+                  </div>
+                  <div class="bax-card-subway-content-letter" style="margin-left: -0.8rem; background-color: #F0BF4C">
+                    P
+                  </div>
+                  <div class="bax-card-subway-content-letter" style="margin-left: -0.8rem; background-color:#3016CC">
+                    C
+                  </div>
+                </div>
+                <p style="text-wrap: nowrap;">Servicio Afectado</p>
+              </div>
+
+            </div>
+
+
           </div>
+
 
           <!-- widgets -->
         </div>
@@ -265,8 +309,25 @@
 
 
 
+  <script>
+
+    const normal = document.getElementById('subway-normal');
+    const affected = document.getElementById('subway-affected');
+    let mostrandoNormal = true;
+
+    setInterval(() => {
+      mostrandoNormal = !mostrandoNormal;
+      if (mostrandoNormal) {
+        normal.classList.add('bax-widget-subway-active');
+        affected.classList.remove('bax-widget-subway-active');
+      } else {
+        normal.classList.remove('bax-widget-subway-active');
+        affected.classList.add('bax-widget-subway-active');
+      }
+    }, 3000); // cambia cada 3 segundos
 
 
+  </script>
 </body>
 
 </html>

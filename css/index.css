@@ -20,6 +20,8 @@
   --cyan-800: #218274;
   --disabled: #e6ebf0;
   --sky-500: #00c5ff;
+  --danger-500: #c93b3b;
+  --success-500: #26874a;
   --blue-500: #336acc;
   /* colores */
 
@@ -65,6 +67,12 @@
 
 .bax-bg-cyan-100 {
   background-color: var(--cyan-100) !important;
+}
+.bax-bg-danger-500 {
+  background-color: var(--danger-500) !important;
+}
+.bax-bg-success-500 {
+  background-color: var(--success-500) !important;
 }
 
 /** BOTONES */
@@ -611,6 +619,7 @@
 /** WIDGET */
 
 .bax-widget {
+  /* width: 100%; */
   width: 180px;
   border-radius: var(--bax-border-radius-sm);
   background-color: var(--white);
@@ -638,6 +647,7 @@
     width: 2.68rem;
     height: 2.68rem;
     font-size: 20px;
+    color: var(--white);
   }
 }
 

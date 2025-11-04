@@ -116,3 +116,20 @@
     border-radius: 1rem 1rem 0 1rem;
   }
 }
+
+.bax-container-widget-subway {
+  position: relative;
+  width: 190px;
+}
+
+.bax-widget-subway {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+  width: max-content;
+}
+
+.bax-widget-subway-active {
+  opacity: 0.8;
+}
