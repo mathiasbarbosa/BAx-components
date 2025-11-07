@@ -1,0 +1,23 @@
+.container-chat {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  padding-top: 3.75rem;
+  background-color: var(--white);
+  gap: 2rem;
+}
+
+.bax-chat-container-message {
+  > * {
+    width: 70%;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+  }
+}
