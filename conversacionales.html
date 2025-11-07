@@ -64,7 +64,7 @@
     </section> -->
 
 
-    <section class=" container-chat">
+    <section class="container-chat">
       <div class="bax-hero-chat-container-messages">
         <div class="bax-chat-container-message">
           <ul>
@@ -113,8 +113,36 @@
 
       <div class="bax-hero-chat-container-messages">
         <div class="bax-chat-container-message">
-
-          <!-- <p>¿En qué puedo ayudarte?</p> -->
+          <p>¿Qué te trae por acá? Elegí una opción o escribime qué estás buscando:</p>
+          <div class="bax-chat-button-panels">
+            <span class="bax-badge-large">
+              Recibir novedades
+            </span>
+            <span class="bax-badge-large">
+              Mi vehículo
+            </span>
+            <span class="bax-badge-large">
+              Trámites y turnos
+            </span>
+            <span class="bax-badge-large">
+              Servicios y reclamos
+            </span>
+            <span class="bax-badge-large">
+              Paseos con IA
+            </span>
+            <span class="bax-badge-large">
+              Más temas
+            </span>
+            <!-- <span class="bax-badge-large">
+              Recibir novedades
+            </span>
+            <span class="bax-badge-large">
+              Mi vehículo
+            </span>
+            <span class="bax-badge-large">
+              Trámites y turnos
+            </span> -->
+          </div>
         </div>
         <div class="bax-chat-container-message">
           <!-- <p>¿En qué puedo ayudarte?</p> -->
@@ -129,8 +157,126 @@
 
     </section>
 
+    <section class="container-chat">
+
+      <div class="bax-hero-chat-container-messages">
+        <div class="bax-chat-container-message">
+          <div class="bax-chat-audio">
+            <img src="./assets/boti-audio.svg" alt="">
+            <div id="waveform"></div>
+            <button id="playPause">
+              <img src="./assets/btn-pause.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bax-chat-container-message">
+        <!-- <p>¿En qué puedo ayudarte?</p> -->
+      </div>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <textarea class="form-control" style="border-radius: 1.5rem;  resize: none;" id="input-textarea"
+          name="campoBloqueTexto" placeholder="Texto de ejemplo"></textarea>
+        <img src="./assets/Boton.svg" alt="Send message">
+      </div>
+
+    </section>
+
+    <section class="container-chat">
+
+      <div class="bax-hero-chat-container-messages">
+        <div class="bax-chat-container-message">
+          <div class="bax-chat-img">
+            <img src="./assets/galeriasolar.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="bax-chat-container-message">
+        <!-- <p>¿En qué puedo ayudarte?</p> -->
+      </div>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <textarea class="form-control" style="border-radius: 1.5rem;  resize: none;" id="input-textarea"
+          name="campoBloqueTexto" placeholder="Texto de ejemplo"></textarea>
+        <img src="./assets/Boton.svg" alt="Send message">
+      </div>
+
+    </section>
+
+    <section class="container-chat">
+
+      <div class="bax-hero-chat-container-messages">
+        <div class="bax-chat-container-message">
+          <div class="bax-chat-video">
+            <video src="./assets/Boti-video.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+      <div class="bax-chat-container-message">
+        <!-- <p>¿En qué puedo ayudarte?</p> -->
+      </div>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <textarea class="form-control" style="border-radius: 1.5rem;  resize: none;" id="input-textarea"
+          name="campoBloqueTexto" placeholder="Texto de ejemplo"></textarea>
+        <img src="./assets/Boton.svg" alt="Send message">
+      </div>
+
+    </section>
+
+    <section class="container-chat">
+
+      <div class="bax-hero-chat-container-messages">
+        <div class="bax-chat-container-message">
+          <ul>
+            <li>Desde acá podés hacer un reclamo si encontrás:</li>
+          </ul>
+          <img src="./assets/boti-subte.svg" width="170px" height="170" alt="" style="width: 170px;"> 
+
+          <ul>
+            <li>Por obras de renovación integral están cerradas las estaciones: </li>
+            <li>🔵 Río de Janeiro y Loria, de la Línea A. </li>
+            <li>🔴 Uruguay y Carlos Gardel, de la Línea B. </li>
+            <li>🟢 Plaza Italia y Agüero, de la Línea D</li>
+            <li>Tengo un montón para contarte. ¿Por dónde empezamos?</li>
+          </ul>
+          <!-- <p>¿En qué puedo ayudarte?</p> -->
+        </div>
+      </div>
+      <div class="bax-chat-container-message">
+        <!-- <p>¿En qué puedo ayudarte?</p> -->
+      </div>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <textarea class="form-control" style="border-radius: 1.5rem;  resize: none;" id="input-textarea"
+          name="campoBloqueTexto" placeholder="Texto de ejemplo"></textarea>
+        <img src="./assets/Boton.svg" alt="Send message">
+      </div>
+
+    </section>
+
   </main>
 
+
+  <script src="https://unpkg.com/wavesurfer.js"></script>
+  <script>
+    const wavesurfer = WaveSurfer.create({
+      container: '#waveform',
+      waveColor: '#E2F8F5',
+      progressColor: '#2e86c1',
+      height: 60,
+      barWidth: 6,
+      responsive: true
+    });
+
+    wavesurfer.load('/assets/Boti.mp3');
+
+    document.getElementById('playPause').onclick = () => wavesurfer.playPause();
+  </script>
 
 </body>
 
