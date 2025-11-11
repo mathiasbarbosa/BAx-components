@@ -1,5 +1,5 @@
 .container-chat {
-  height: 600px;
+  max-height: 56.25rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -22,15 +22,19 @@
     flex-direction: column;
     gap: 0.5rem;
     list-style: none;
+    padding: 0;
   }
 }
 
+/* RTA BUTTONS */
 .bax-chat-button-panels {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 0.5rem;
 }
+
+/* RTA AUDIO */
 
 .bax-chat-audio {
   display: flex;
@@ -52,15 +56,108 @@
   cursor: pointer;
 }
 
+/* RTA MULTIMEDIA IMG | VIDEO */
+
 .bax-chat-img,
 .bax-chat-video {
-  border-radius: 0.75;
   max-width: 492px;
   height: 292px;
   > img,
   video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+  }
+}
+
+.bax-chat-carousel {
+  width: 100%;
+}
+
+.bax-chat-carousel.carousel.cards {
+  padding: 0 !important;
+}
+
+.bax-chat-carousel {
+  padding: 1rem !important;
+}
+
+@media (width < 1200px) {
+  .bax-chat-carousel.carousel.cards .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto hidden;
+    column-gap: 24px;
+    padding: 0 1rem 24px;
+  }
+}
+
+@media (width < 1200px) {
+  .bax-chat-carousel.carousel.cards .carousel-inner .carousel-item {
+    display: contents;
+  }
+}
+
+@media (width < 1200px) {
+  .bax-chat-carousel.carousel.cards .carousel-control-next,
+  .bax-chat-carousel.carousel.cards .carousel-control-prev,
+  .bax-chat-carousel.carousel.cards .carousel-indicators {
+    display: none;
+  }
+}
+
+@media (width < 1200px) {
+  .bax-chat-carousel.carousel.cards .carousel-inner .carousel-item .card {
+    flex: 0 0 auto;
+    width: 296px;
+  }
+}
+
+@media (width >= 1200px) {
+  .bax-chat-carousel.carousel .carousel-control-next,
+  .bax-chat-carousel.carousel .carousel-control-prev {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (width >= 1200px) {
+  .bax-chat-carousel.carousel
+    .carousel-control-next
+    .carousel-control-prev-icon,
+  .bax-chat-carousel.carousel
+    .carousel-control-prev
+    .carousel-control-prev-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (width <= 425px) {
+  .bax-chat-container-message {
+    > * {
+      width: 100%;
+    }
+    p {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (width < 768px) {
+  /* RTA BUTTONS */
+  .bax-badge-large {
+    min-width: auto;
+  }
+  .bax-chat-button-panels {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 0.5rem;
+  }
+
+  .container-chat {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

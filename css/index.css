@@ -614,6 +614,12 @@
   background-color: var(--cyan-50);
 }
 
+@media (width < 768px) {
+  .bax-badge-large {
+    min-width: auto;
+  }
+}
+
 /** BADGE */
 
 /** WIDGET */
