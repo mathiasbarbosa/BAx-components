@@ -144,7 +144,7 @@
   }
 }
 
-@media (width < 768px) {
+@media (width <= 768px) {
   /* RTA BUTTONS */
   .bax-badge-large {
     min-width: auto;
@@ -159,5 +159,14 @@
   .container-chat {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .bax-chat-button-panels {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 0.5rem;
   }
 }
