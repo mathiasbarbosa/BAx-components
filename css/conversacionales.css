@@ -133,7 +133,7 @@
   }
 }
 
-@media (width <= 425px) {
+@media (width <= 576px) {
   .bax-chat-container-message {
     > * {
       width: 100%;

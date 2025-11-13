@@ -59,3 +59,8 @@ home perfil logueado
 // ! TODO 
 - estados componentes
 - responsive 
+
+
+ajustar widgets
+conversacional documento pdf
+ajustar chat responsive

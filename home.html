@@ -150,9 +150,9 @@
     <section class="bax-hero bg-neutral">
       <div class="bax-hero-banner container">
         <div>
-          <!-- <img src="./assets/bax-banner.jpg" alt="Banner BAx"> -->
+          <img src="./assets/bax-banner.jpg" alt="Banner BAx">
           <!-- <img src="./assets/ventajadeportenino-p.jpg" alt="Banner BAx"> -->
-          <img src="./assets/camp.jpg" alt="Banner BAx">
+          <!-- <img src="./assets/camp.jpg" alt="Banner BAx"> -->
           <!-- <img src="./assets/paisaje.jpg" alt="Banner BAx"> -->
         </div>
 
@@ -323,7 +323,20 @@
 
   <script>
 
+    const normal = document.getElementById('subway-normal');
+    const affected = document.getElementById('subway-affected');
+    let mostrandoNormal = true;
 
+    setInterval(() => {
+      mostrandoNormal = !mostrandoNormal;
+      if (mostrandoNormal) {
+        normal.classList.add('bax-widget-subway-active');
+        affected.classList.remove('bax-widget-subway-active');
+      } else {
+        normal.classList.remove('bax-widget-subway-active');
+        affected.classList.add('bax-widget-subway-active');
+      }
+    }, 3000); // cambia cada 3 segundos
 
   </script>
 </body>
